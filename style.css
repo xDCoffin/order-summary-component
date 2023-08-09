@@ -1,3 +1,8 @@
+@font-face {
+    font-family: Red Hat Display;
+    src: url('./assets/RedHatDisplay-VariableFont_wght.ttf');
+}
+
 .attribution {
     font-size: 11px;
     text-align: center;
