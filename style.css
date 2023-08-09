@@ -1,0 +1,158 @@
+.attribution {
+    font-size: 11px;
+    text-align: center;
+    position: absolute;
+    bottom: 10px;
+    width: 100%;
+    color: #717FA6;
+}
+
+.attribution a {
+    color: #382AE1;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #E0E8FF;
+    background-image: url('./assets/pattern-background-desktop.svg');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    font-family: Red Hat Display;
+}
+
+img {
+    display: block;
+    width: 100%;
+    min-width: 50px;
+}
+
+.card {
+    border-radius: 20px;
+    background-color: #fff;
+    overflow: hidden;
+    width: 100%;
+    max-width: 450px;
+    box-shadow: 0px 40px 40px -20px rgba(13, 48, 189, 0.15);
+}
+
+.card .content {
+    padding: 50px;
+}
+
+.card h2 {
+    color: #1F2E55;
+    text-align: center;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+    margin: 0;
+}
+
+.card p {
+    color: #717FA6;
+    text-align: center;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 26px;
+}
+
+.card .plan {
+    border-radius: 11px;
+    background: #F7F9FF;
+    display: flex;
+    align-items: center;
+}
+
+.card .plan div:not(div:nth-child(2)) {
+    margin: 25px;
+}
+
+.card .plan div span:first-child {
+    color: #1F2E55;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+}
+
+.card .plan div span:last-child {
+    color: #717FA6;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.card .plan div a {
+    color: #382AE1;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-decoration-line: underline;
+}
+
+.card .plan div a:hover {
+    color: #766CF1
+}
+
+.card button {
+    border-radius: 10px;
+    background: #382AE1;
+    box-shadow: 0px 20px 20px 0px rgba(56, 42, 225, 0.19);
+    width: 100%;
+    height: 50px;
+    color: #fff;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+    cursor: pointer;
+    border: none;
+    margin: 30px 0;
+}
+
+.card button:hover {
+    background-color: #766CF1;
+}
+
+.card a {
+    color: #717FA6;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+    text-align: center;
+    display: block;
+    text-decoration: none;
+}
+
+.card a:hover {
+    color: #1F2E55;
+}
+
+@media (max-width: 376px) {
+    body {
+        padding: 25px;
+        background-image: url('./assets/pattern-background-mobile.svg');
+    }
+
+    .card .content {
+        padding: 25px;
+    }
+
+    .card .plan div:not(div:nth-child(2)) {
+        margin: 15px;
+    }
+}
